@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+ <title>Seabattle</title>
+ <link rel="stylesheet" href="Seabattle.css">
+</head>
+<body>
+<div id="space">
+ <div id="messageArea"></div>
+ <div id="con">
+ <div id="conShot">Выстрелы:</div>
+  <div id="conHit">Попадания:</div>
+  <div id="conAcc">Точность:</div>
+  <div id="conSnk">Потоплено:</div>
+ </div>
+<table>
+<tr id="1rail">
+<th></th>
+<th>A</th>
+<th>B</th>
+<th>C</th>
+<th>D</th>
+<th>E</th>
+<th>F</th>
+<th>G</th>
+<th>H</th>
+<th>I</th>
+<th>J</th>
+</tr>
+<tr id="2rail">
+<td class="ciphers"> 1 </td>
+<td id="11" onclick="model.fire('11')"></td>
+<td id="21" onclick="model.fire('21')"></td>
+<td id="31" onclick="model.fire('31')"></td>
+<td id="41" onclick="model.fire('41')"></td>
+<td id="51" onclick="model.fire('51')"></td>
+<td id="61" onclick="model.fire('61')"></td>
+<td id="71" onclick="model.fire('71')"></td>
+<td id="81" onclick="model.fire('81')"></td>
+<td id="91" onclick="model.fire('91')"></td>
+<td id="101" onclick="model.fire('101')"></td>
+</tr>
+<tr id="3rail">
+<td class="ciphers"> 2 </td>
+<td id="12" onclick="model.fire('12')"></td>
+<td id="22" onclick="model.fire('22')"></td>
+<td id="32" onclick="model.fire('32')"></td>
+<td id="42" onclick="model.fire('42')"></td>
+<td id="52" onclick="model.fire('52')"></td>
+<td id="62" onclick="model.fire('62')"></td>
+<td id="72" onclick="model.fire('72')"></td>
+<td id="82" onclick="model.fire('82')"></td>
+<td id="92" onclick="model.fire('92')"></td>
+<td id="102" onclick="model.fire('102')"></td>
+</tr>
+<tr id="4rail">
+<td class="ciphers"> 3 </td>
+<td id="13" onclick="model.fire('13')"></td>
+<td id="23" onclick="model.fire('23')"></td>
+<td id="33" onclick="model.fire('33')"></td>
+<td id="43" onclick="model.fire('43')"></td>
+<td id="53" onclick="model.fire('53')"></td>
+<td id="63" onclick="model.fire('63')"></td>
+<td id="73" onclick="model.fire('73')"></td>
+<td id="83" onclick="model.fire('83')"></td>
+<td id="93" onclick="model.fire('93')"></td>
+<td id="103" onclick="model.fire('103')"></td>
+</tr>
+<tr id="5rail">
+<td class="ciphers"> 4 </td>
+<td id="14" onclick="model.fire('14')"></td>
+<td id="24" onclick="model.fire('24')"></td>
+<td id="34" onclick="model.fire('34')"></td>
+<td id="44" onclick="model.fire('44')"></td>
+<td id="54" onclick="model.fire('54')"></td>
+<td id="64" onclick="model.fire('64')"></td>
+<td id="74" onclick="model.fire('74')"></td>
+<td id="84" onclick="model.fire('84')"></td>
+<td id="94" onclick="model.fire('94')"></td>
+<td id="104" onclick="model.fire('104')"></td>
+</tr>
+<tr id="6rail">
+<td class="ciphers"> 5 </td>
+<td id="15" onclick="model.fire('15')"></td>
+<td id="25" onclick="model.fire('25')"></td>
+<td id="35" onclick="model.fire('35')"></td>
+<td id="45" onclick="model.fire('45')"></td>
+<td id="55" onclick="model.fire('55')"></td>
+<td id="65" onclick="model.fire('65')"></td>
+<td id="75" onclick="model.fire('75')"></td>
+<td id="85" onclick="model.fire('85')"></td>
+<td id="95" onclick="model.fire('95')"></td>
+<td id="105" onclick="model.fire('105')"></td>
+</tr>
+<tr id="7rail">
+<td class="ciphers"> 6 </td>
+<td id="16" onclick="model.fire('16')"></td>
+<td id="26" onclick="model.fire('26')"></td>
+<td id="36" onclick="model.fire('36')"></td>
+<td id="46" onclick="model.fire('46')"></td>
+<td id="56" onclick="model.fire('56')"></td>
+<td id="66" onclick="model.fire('66')"></td>
+<td id="76" onclick="model.fire('76')"></td>
+<td id="86" onclick="model.fire('86')"></td>
+<td id="96" onclick="model.fire('96')"></td>
+<td id="106" onclick="model.fire('106')"></td>
+</tr>
+<tr id="8rail">
+<td class="ciphers"> 7 </td>
+<td id="17" onclick="model.fire('17')"></td>
+<td id="27" onclick="model.fire('27')"></td>
+<td id="37" onclick="model.fire('37')"></td>
+<td id="47" onclick="model.fire('47')"></td>
+<td id="57" onclick="model.fire('57')"></td>
+<td id="67" onclick="model.fire('67')"></td>
+<td id="77" onclick="model.fire('77')"></td>
+<td id="87" onclick="model.fire('87')"></td>
+<td id="97" onclick="model.fire('97')"></td>
+<td id="107" onclick="model.fire('107')"></td>
+</tr>
+<tr id="9rail">
+<td class="ciphers"> 8 </td>
+<td id="18" onclick="model.fire('18')"></td>
+<td id="28" onclick="model.fire('28')"></td>
+<td id="38" onclick="model.fire('38')"></td>
+<td id="48" onclick="model.fire('48')"></td>
+<td id="58" onclick="model.fire('58')"></td>
+<td id="68" onclick="model.fire('68')"></td>
+<td id="78" onclick="model.fire('78')"></td>
+<td id="88" onclick="model.fire('88')"></td>
+<td id="98" onclick="model.fire('98')"></td>
+<td id="108" onclick="model.fire('108')"></td>
+</tr>
+<tr id="10rail">
+<td class="ciphers"> 9 </td>
+<td id="19" onclick="model.fire('19')"></td>
+<td id="29" onclick="model.fire('29')"></td>
+<td id="39" onclick="model.fire('39')"></td>
+<td id="49" onclick="model.fire('49')"></td>
+<td id="59" onclick="model.fire('59')"></td>
+<td id="69" onclick="model.fire('69')"></td>
+<td id="79" onclick="model.fire('79')"></td>
+<td id="89" onclick="model.fire('89')"></td>
+<td id="99" onclick="model.fire('99')"></td>
+<td id="109" onclick="model.fire('109')"></td>
+</tr>
+<tr id="11rail">
+<td class="ciphers"> 10 </td>
+<td id="110" onclick="model.fire('110')"></td>
+<td id="210" onclick="model.fire('210')"></td>
+<td id="310" onclick="model.fire('310')"></td>
+<td id="410" onclick="model.fire('410')"></td>
+<td id="510" onclick="model.fire('510')"></td>
+<td id="610" onclick="model.fire('610')"></td>
+<td id="710" onclick="model.fire('710')"></td>
+<td id="810" onclick="model.fire('810')"></td>
+<td id="910" onclick="model.fire('910')"></td>
+<td id="1010" onclick="model.fire('1010')"></td>
+</tr>
+</table>
+</div>
+<script src="Seabattle.js"></script>
+
+
+</body>
+</html>
